@@ -14,7 +14,7 @@
 
         <?php
              $header = get_field('header');
-             echo $header['logo'];
+             echo $header['header_logo'];
         ?>
 
         <nav class="nav">
@@ -27,10 +27,10 @@
             ?>
         </nav>
         <?php
-            echo $header['button_text'];
+            echo $header['header_button_text'];
         ?>
 
         <?php
-           echo $header['button_link']['url'];
+           echo $header['header_button_link'];
         ?>
     </header>

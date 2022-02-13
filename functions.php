@@ -15,11 +15,38 @@ add_action('wp_enqueue_scripts', 'load_css');
 // Load Javascript
 function load_js() {
     
-    wp_register_script('main-script', get_template_directory_uri() . '/js/main.js', array(), '', false, true);
+    wp_register_script('main-script', get_template_directory_uri() . '/js/main.js', array(), '', true, true);
     wp_enqueue_script('main-script');
+    wp_localize_script('main-script', 'ajax', array(
+        'url' => admin_url('admin-ajax.php') 
+    ));
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
+// AJAX
+function ajax_get_posts_by_categoryID() {
+    $categoryID = !empty($_POST['categoryID']) ? esc_attr($_POST['categoryID']) : false;
+    // if(empty($categoryID)) wp_die();
+    $args = array(
+        'posts_type'=> 'post',
+        'posts_per_page' => -1,
+        'cat' => $categoryID
+    );
+    
+    
+    $query = new WP_Query($args);
+    if($query->have_posts()): 
+        while($query->have_posts()): $query->the_post();
+            the_title('<h2>', '</h2>');
+            the_content('p', '</p>');
+        endwhile;
+    endif;
+    wp_die();
+}
+
+add_action('wp_ajax_load_posts', 'ajax_get_posts_by_categoryID');
+add_action('wp_ajax_nopriv_load_posts', 'ajax_get_posts_by_categoryID');
 
 // Theme Options
 add_theme_support('menus');
@@ -31,3 +58,37 @@ register_nav_menus(
         'footer-menu' => 'Footer Menu Location'
     )
 );
+
+// Allow SVG
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+
+    global $wp_version;
+    if ( $wp_version !== '4.7.1' ) {
+       return $data;
+    }
+  
+    $filetype = wp_check_filetype( $filename, $mimes );
+  
+    return [
+        'ext'             => $filetype['ext'],
+        'type'            => $filetype['type'],
+        'proper_filename' => $data['proper_filename']
+    ];
+  
+  }, 10, 4 );
+  
+  function cc_mime_types( $mimes ){
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+  }
+  add_filter( 'upload_mimes', 'cc_mime_types' );
+  
+  function fix_svg() {
+    echo '<style type="text/css">
+          .attachment-266x266, .thumbnail img {
+               width: 100% !important;
+               height: auto !important;
+          }
+          </style>';
+  }
+  add_action( 'admin_head', 'fix_svg' );
