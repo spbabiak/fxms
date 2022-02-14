@@ -79,7 +79,7 @@
 
 <section id="faq" class="faq">
     <?= get_field('faq_title')?>
-    <?php $categories = get_field('faq_categories'); print_r($categories);?>
+    <?php $categories = get_field('faq_categories');?>
     
     <ul class="faq_categories_list">
         <?php foreach($categories as $category): ?>
