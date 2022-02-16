@@ -1,3 +1,66 @@
+:root {
+
+    /* ---- Design System ---- */
+    
+    /* Font sizes */
+    --normal-font-size-1: 1rem;             /* font-size: 16px */
+    --normal-font-size-2: 1.125rem;         /* font-size: 18px */
+    --medium-font-size-1: 1.25rem;          /* font-size: 20px */
+    --medium-font-size-2: 1.5rem;           /* font-size: 24px */
+    --large-font-size-1: 2.5rem;            /* font-size: 40px */
+    --large-font-size-2: 3rem;              /* font-size: 48px */
+    --normal-line-height-1: 1.32rem;        /* line-height: 21.12px */
+    --normal-line-height-2: 1.485rem;       /* line-height: 23.76px */
+    --medium-line-height-2: 1.980rem;       /* line-height: 31.69px */
+    --large-line-height-1: 3.025rem;        /* line-height: 48.41px */
+    --large-line-height-2: 3.63rem;         /* line-height: 58.09px */
+
+
+    /* Colors */
+    
+    --main-accent-color-1: #5974ff;                                         /* Pro Tier Card Background, FAQ Category Active Item, FAQ List Item Arrow Icon Active */
+    --secondary-accent-color-1: #1741ac;                                    /* Section Title Text Emphasis, Instruction title, Tier Title on white*/
+    --secondary-accent-color-2: #1b8de4;                                    /* Icons */
+    --secondary-accent-color-3: #70abd7;                                    /* Service Button border, text, icon */
+    --dark-text-color-1: #01003a;                                           /* Menu Text */
+    --dark-text-color-2: #111111;                                           /* Section Title */ 
+    --dark-text-color-3: #303030;                                           /* Icon Titles, FAQ Section: question */ 
+    --dark-text-color-4: #484848;                                           /* Instructions Descriptions, Tier Benefits on white */ 
+    --dark-text-color-5: #585858;                                           /* Instruments name */ 
+    --dark-text-color-6: #454444;                                           /* Instruments price */ 
+    --dark-text-color-7: #989898;                                           /* Section Descriptions */ 
+    --dark-text-color-8: #707070;                                           /* FAQ Section: answer, Footer Disclaimer */ 
+    --dark-text-color-9: #666666;                                           /* FAQ Categories Items on white */ 
+    --white-text-color-1: #ffffff;                                          /* Hero Section Title, Main Button Text, Tier Title on blue background, Tier Benefits on blue background, FAQ Section Active Category Text  */ 
+    --white-text-color-2: #ffffff;                                          /* Hero Section Description on dark background */ 
+    --green-text-color: #1fab2d;                                            /* Instruments Grow Percentage Text and Arrow Up*/ 
+    --filled-button-static-color: #305aef;                                  /* Filled Button Static Color, border, text */
+    --filled-button-hover-color: #3962f4;                                   /* Filled Button Hover Color */   
+    --filled-button-active-color: #0033e8;                                  /* Filled Button Active color */
+    --ghost-button-static-border-1: #305aef;                                /* Blue Ghost Button Static Border Color, Text */
+    --ghost-button-hover-background-1: #C4C4C4;                             /* Blue Ghost Button Hover Background Color */
+    --ghost-button-active-inner-shadow-1: inset 0px 0px 6px #0033e8;        /* Blue Ghost Button Active Inner Shadow Color */
+    --ghost-button-static-border-2: #ffffff;                                /* White Ghost Button Static Border Color */
+    --ghost-button-hover-background-2: rgba(220, 221, 222, .12);            /* White Ghost Button Hover Background Color */
+    --ghost-button-active-inner-shadow-2: inset 0px 1px 8px #dcddde;        /* White Ghost Button Hover Inner Shadow Color */
+    --image-overlay-background: rgba(106, 130, 255, .21);                   /* Hero Image Overlay Background Color */
+    --section-overlay-background: #F5F8FF;                                  /* Sections Overlay Background Color */
+    --divider-color-1: #e5f3ff;                                             /* Advantages Section Title and Description Divider, Icon and Icons title Divider */
+    --divider-color-2: rgba(89, 116, 255, .1);                              /* Tier Benefits Divider on white, FAQ Categories Divider */
+    --divider-color-3: rgba(0, 0, 0, .13);                                  /* Tier Benefits Divider on blue */
+    --divider-color-4: rgba(170, 170, 170, .19);                            /* FAQ Content Divider */
+    --decoration-color-1: rgba(89, 116, 255, .21);                          /* Decoration Color: Section Membership Instructions*/
+    --decoration-color-2: #5974ff;                                          /* Decoration Color: Section Membership Instructions Step Numbers, Arrows */
+    --decoration-color-3: #010620;                                          /* Decoration Color: Section Tiers Small Square on Background */
+    --decoration-color-4: #969696;                                          /* FAQ List Item Arrow Icon Static */
+
+    /* Miscellaneous */
+
+    --main-border-radius: 5px;
+    --box-shadow-on-white: 0px 3px 9px rgba(129, 129, 129, 0.15), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
+    --box-shadow-on-blue: 0px 3px 11px rgba(129, 129, 129, 0.24), inset 2px 2px 4px rgba(89, 116, 255, 0.19);
+}
+
 @font-face {
     font-family: SegoeUI;
     src:
@@ -5,5 +68,12 @@
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
-    font-weight: 700;
+    font-weight: 600;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: var(--normal-line-height-1);
 }
