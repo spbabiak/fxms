@@ -10,27 +10,25 @@
 
 </head>
 <body>
-    <header>
-
-        <?php
-             $header = get_field('header');
-             echo $header['header_logo'];
-        ?>
-
-        <nav class="nav">
-            <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'main-menu'
-                    ) 
-                );
+    <header id="home" class="main_header">
+        <div class="wrapper">
+            <?php 
+                $headerLogo = get_field('header_logo'); 
+                $headerButtonLink = get_field('header_button_link');
+                $headerButtonText = get_field('header_button_text');
             ?>
-        </nav>
-        <?php
-            echo $header['header_button_text'];
-        ?>
-
-        <?php
-           echo $header['header_button_link'];
-        ?>
+            <div class="wrapper_logo">
+                <img class="image_logo" src="<?php if($headerLogo): echo $headerLogo; endif; ?>" alt="FXMS Logo. Brain mark with gears inside and FXMS sign">
+            </div>
+            <nav class="nav">
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'main-menu'
+                        ) 
+                    );
+                ?>
+            </nav>
+            <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
+        </div>
     </header>

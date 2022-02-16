@@ -19,10 +19,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_6206a0f969cd6",
-            "label": "Header",
-            "name": "header",
-            "type": "group",
+            "key": "field_6206a16769cd7",
+            "label": "Logo",
+            "name": "header_logo",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -31,74 +31,57 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6206a16769cd7",
-                    "label": "Logo",
-                    "name": "header_logo",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_6206a18769cd8",
-                    "label": "Button text",
-                    "name": "header_button_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Sign Up",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6206a2b2f7787",
-                    "label": "Button link",
-                    "name": "header_button_link",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
-            "key": "field_6206fd9316fed",
+            "key": "field_6206a18769cd8",
+            "label": "Button text",
+            "name": "header_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sign Up",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206a2b2f7787",
+            "label": "Button link",
+            "name": "header_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620d040d36475",
             "label": "Slider",
             "name": "",
             "type": "tab",
@@ -162,7 +145,7 @@
                         {
                             "key": "field_6206a4087df0a",
                             "label": "Image",
-                            "name": "slide_1_image",
+                            "name": "slide_image",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -186,7 +169,7 @@
                         {
                             "key": "field_6206a4167df0b",
                             "label": "Title",
-                            "name": "slide_1_title",
+                            "name": "slide_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -205,7 +188,7 @@
                         {
                             "key": "field_6206a8007df0c",
                             "label": "Description",
-                            "name": "slide_1_description",
+                            "name": "slide_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -224,7 +207,7 @@
                         {
                             "key": "field_6206a8117df0d",
                             "label": "Button text",
-                            "name": "slide_1_button_text",
+                            "name": "slide_button_text",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -243,7 +226,7 @@
                         {
                             "key": "field_6206a82a7df0e",
                             "label": "Button link",
-                            "name": "slide_1_button_link",
+                            "name": "slide_button_link",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -262,7 +245,7 @@
                         {
                             "key": "field_6206a8377df0f",
                             "label": "Content alignment",
-                            "name": "slide_1_content_alignment",
+                            "name": "slide_content_alignment",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -287,7 +270,7 @@
                         {
                             "key": "field_6206a8c87df10",
                             "label": "Content width",
-                            "name": "slide_1_content_width",
+                            "name": "slide_content_width",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -299,6 +282,7 @@
                             },
                             "choices": {
                                 "50": "50%",
+                                "75": "75%",
                                 "100": "100%"
                             },
                             "default_value": false,
@@ -345,7 +329,7 @@
                         {
                             "key": "field_6206ae1efcec5",
                             "label": "Image",
-                            "name": "slide_2_image",
+                            "name": "slide_image",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -369,7 +353,7 @@
                         {
                             "key": "field_6206ae1efcec6",
                             "label": "Title",
-                            "name": "slide_2_title",
+                            "name": "slide_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -388,7 +372,7 @@
                         {
                             "key": "field_6206ae1efcec7",
                             "label": "Description",
-                            "name": "slide_2_description",
+                            "name": "slide_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -407,7 +391,7 @@
                         {
                             "key": "field_6206ae1efcec8",
                             "label": "Button text",
-                            "name": "slide_2_button_text",
+                            "name": "slide_button_text",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -426,7 +410,7 @@
                         {
                             "key": "field_6206ae1efcec9",
                             "label": "Button link",
-                            "name": "slide_2_button_link",
+                            "name": "slide_button_link",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -445,7 +429,7 @@
                         {
                             "key": "field_6206ae1efceca",
                             "label": "Content alignment",
-                            "name": "slide_2_content_alignment",
+                            "name": "slide_content_alignment",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -470,7 +454,7 @@
                         {
                             "key": "field_6206ae1efcecb",
                             "label": "Content width",
-                            "name": "slide_2_content_width",
+                            "name": "slide_content_width",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -482,6 +466,7 @@
                             },
                             "choices": {
                                 "50": "50%",
+                                "75": "75%",
                                 "100": "100%"
                             },
                             "default_value": false,
@@ -528,7 +513,7 @@
                         {
                             "key": "field_6206ae24fcecd",
                             "label": "Image",
-                            "name": "slide_3_image",
+                            "name": "slide_image",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -552,7 +537,7 @@
                         {
                             "key": "field_6206ae24fcece",
                             "label": "Title",
-                            "name": "slide_3_title",
+                            "name": "slide_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -571,7 +556,7 @@
                         {
                             "key": "field_6206ae24fcecf",
                             "label": "Description",
-                            "name": "slide_3_description",
+                            "name": "slide_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -590,7 +575,7 @@
                         {
                             "key": "field_6206ae24fced0",
                             "label": "Button text",
-                            "name": "slide_3_button_text",
+                            "name": "slide_button_text",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -609,7 +594,7 @@
                         {
                             "key": "field_6206ae24fced1",
                             "label": "Button link",
-                            "name": "slide_3_button_link",
+                            "name": "slide_button_link",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -628,7 +613,7 @@
                         {
                             "key": "field_6206ae24fced2",
                             "label": "Content alignment",
-                            "name": "slide_3_content_alignment",
+                            "name": "slide_content_alignment",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -653,7 +638,7 @@
                         {
                             "key": "field_6206ae24fced3",
                             "label": "Content width",
-                            "name": "slide_3_content_width",
+                            "name": "slide_content_width",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -665,6 +650,7 @@
                             },
                             "choices": {
                                 "50": "50%",
+                                "75": "75%",
                                 "100": "100%"
                             },
                             "default_value": false,
@@ -696,9 +682,47 @@
             "endpoint": 0
         },
         {
-            "key": "field_6206d0148e6fd",
-            "label": "Our advantages",
-            "name": "our_advantages",
+            "key": "field_6206d0358e6fe",
+            "label": "Title",
+            "name": "our_advantages_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Trade Your Strategy With Our Funds",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206d08c8e6ff",
+            "label": "Description",
+            "name": "our_advantages_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "There is no holy grail to trading. Two different strategies could be equally successful. Show us that your strategy works and get funded. That simple.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206d0aa8e700",
+            "label": "Funds",
+            "name": "our_advantages_funds",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -708,12 +732,12 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
-                    "key": "field_6206d0358e6fe",
-                    "label": "Title",
-                    "name": "our_advantages_title",
+                    "key": "field_6206d1668e701",
+                    "label": "Fund 1",
+                    "name": "our_advantages_fund_1",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -723,16 +747,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Trade Your Strategy With Our Funds",
+                    "default_value": "Forex",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6206d08c8e6ff",
-                    "label": "Description",
-                    "name": "our_advantages_description",
+                    "key": "field_6206d1af8e703",
+                    "label": "Fund 2",
+                    "name": "our_advantages_fund_2",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -742,17 +766,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "There is no holy grail to trading. Two different strategies could be equally successful. Show us that your strategy works and get funded. That simple.",
+                    "default_value": "Stocks",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6206d0aa8e700",
-                    "label": "Funds",
-                    "name": "our_advantages_funds",
-                    "type": "group",
+                    "key": "field_6206d1c08e704",
+                    "label": "Fund 3",
+                    "name": "our_advantages_fund_3",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -761,85 +785,30 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_6206d1668e701",
-                            "label": "Fund 1",
-                            "name": "our_advantages_fund_1",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Forex",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_6206d1af8e703",
-                            "label": "Fund 2",
-                            "name": "our_advantages_fund_2",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Stocks",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_6206d1c08e704",
-                            "label": "Fund 3",
-                            "name": "our_advantages_fund_3",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Metals",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_6206d1d48e705",
-                            "label": "Fund 4",
-                            "name": "our_advantages_fund_4",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Crypto",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ]
+                    "default_value": "Metals",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6206d1d48e705",
+                    "label": "Fund 4",
+                    "name": "our_advantages_fund_4",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Crypto",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -860,10 +829,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_6206e74f4899f",
-            "label": "Platform info",
-            "name": "platform_info",
-            "type": "group",
+            "key": "field_6206e775489a0",
+            "label": "Title",
+            "name": "platform_info_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -872,85 +841,68 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6206e775489a0",
-                    "label": "Title",
-                    "name": "platform_info_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "The Platform And Conditions You Want",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6206e7b0489a1",
-                    "label": "Description",
-                    "name": "platform_info_description",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "FXMS members execute their trades on the world's most popular platform -  MetaTrader 4. Members can trade through MT4 Terminal, Mobile or Web platform. All trades are executed with No Dealing Desk execution for a superior and fully transparent trading experience.",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6206e7ed489a2",
-                    "label": "Button text",
-                    "name": "platform_info_button_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Start",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6206e80f489a3",
-                    "label": "Button link",
-                    "name": "platform_info_button_link",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
+            "default_value": "The Platform And Conditions You Want",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206e7b0489a1",
+            "label": "Description",
+            "name": "platform_info_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "FXMS members execute their trades on the world's most popular platform -  MetaTrader 4. Members can trade through MT4 Terminal, Mobile or Web platform. All trades are executed with No Dealing Desk execution for a superior and fully transparent trading experience.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206e7ed489a2",
+            "label": "Button text",
+            "name": "platform_info_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Start",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6206e80f489a3",
+            "label": "Button link",
+            "name": "platform_info_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_6206fdd516ff0",
@@ -969,9 +921,28 @@
             "endpoint": 0
         },
         {
-            "key": "field_6206eb7718841",
-            "label": "Instruments info",
-            "name": "instruments_info",
+            "key": "field_6206f728494cf",
+            "label": "Title",
+            "name": "instruments_info_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Popular Instruments Among Members",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620d28cc874d2",
+            "label": "Instruments",
+            "name": "instruments",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -983,25 +954,6 @@
             },
             "layout": "block",
             "sub_fields": [
-                {
-                    "key": "field_6206f728494cf",
-                    "label": "Title",
-                    "name": "instruments_info_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Popular Instruments Among Members",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
                 {
                     "key": "field_6206eb9618842",
                     "label": "Instrument 1",
@@ -1020,7 +972,7 @@
                         {
                             "key": "field_6206ec0018843",
                             "label": "Icon",
-                            "name": "instrument_icon_1",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1044,7 +996,7 @@
                         {
                             "key": "field_6206ec5718844",
                             "label": "Name",
-                            "name": "instrument_name_1",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1063,7 +1015,7 @@
                         {
                             "key": "field_6206ec9018845",
                             "label": "Price",
-                            "name": "instrument_price_1",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1082,7 +1034,7 @@
                         {
                             "key": "field_6206ece618846",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_1",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1118,7 +1070,7 @@
                         {
                             "key": "field_6206ee201884d",
                             "label": "Icon",
-                            "name": "instrument_icon_2",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1142,7 +1094,7 @@
                         {
                             "key": "field_6206ee201884e",
                             "label": "Name",
-                            "name": "instrument_name_2",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1161,7 +1113,7 @@
                         {
                             "key": "field_6206ee201884f",
                             "label": "Price",
-                            "name": "instrument_price_2",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1180,7 +1132,7 @@
                         {
                             "key": "field_6206ee2018850",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_2",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1216,7 +1168,7 @@
                         {
                             "key": "field_6206ee4c18852",
                             "label": "Icon",
-                            "name": "instrument_icon_3",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1240,7 +1192,7 @@
                         {
                             "key": "field_6206ee4c18853",
                             "label": "Name",
-                            "name": "instrument_name_3",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1259,7 +1211,7 @@
                         {
                             "key": "field_6206ee4c18854",
                             "label": "Price",
-                            "name": "instrument_price_3",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1278,7 +1230,7 @@
                         {
                             "key": "field_6206ee4c18855",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_3",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1314,7 +1266,7 @@
                         {
                             "key": "field_6206ee5418857",
                             "label": "Icon",
-                            "name": "instrument_icon_4",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1338,7 +1290,7 @@
                         {
                             "key": "field_6206ee5418858",
                             "label": "Name",
-                            "name": "instrument_name_4",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1357,7 +1309,7 @@
                         {
                             "key": "field_6206ee5418859",
                             "label": "Price",
-                            "name": "instrument_price_4",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1376,7 +1328,7 @@
                         {
                             "key": "field_6206ee541885a",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_4",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1412,7 +1364,7 @@
                         {
                             "key": "field_6206ee571885c",
                             "label": "Icon",
-                            "name": "instrument_icon_5",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1436,7 +1388,7 @@
                         {
                             "key": "field_6206ee571885d",
                             "label": "Name",
-                            "name": "instrument_name_5",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1455,7 +1407,7 @@
                         {
                             "key": "field_6206ee571885e",
                             "label": "Price",
-                            "name": "instrument_price_5",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1474,7 +1426,7 @@
                         {
                             "key": "field_6206ee571885f",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_5",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1510,7 +1462,7 @@
                         {
                             "key": "field_6206ee5a18861",
                             "label": "Icon",
-                            "name": "instrument_icon_6",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1534,7 +1486,7 @@
                         {
                             "key": "field_6206ee5a18862",
                             "label": "Name",
-                            "name": "instrument_name_6",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1553,7 +1505,7 @@
                         {
                             "key": "field_6206ee5a18863",
                             "label": "Price",
-                            "name": "instrument_price_6",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1572,7 +1524,7 @@
                         {
                             "key": "field_6206ee5a18864",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_6",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1608,7 +1560,7 @@
                         {
                             "key": "field_6206ee5c18866",
                             "label": "Icon",
-                            "name": "instrument_icon_7",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1632,7 +1584,7 @@
                         {
                             "key": "field_6206ee5c18867",
                             "label": "Name",
-                            "name": "instrument_name_7",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1651,7 +1603,7 @@
                         {
                             "key": "field_6206ee5c18868",
                             "label": "Price",
-                            "name": "instrument_price_7",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1670,7 +1622,7 @@
                         {
                             "key": "field_6206ee5c18869",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_7",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1706,7 +1658,7 @@
                         {
                             "key": "field_6206ee5f1886b",
                             "label": "Icon",
-                            "name": "instrument_icon_8",
+                            "name": "instrument_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -1730,7 +1682,7 @@
                         {
                             "key": "field_6206ee5f1886c",
                             "label": "Name",
-                            "name": "instrument_name_8",
+                            "name": "instrument_name",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1749,7 +1701,7 @@
                         {
                             "key": "field_6206ee5f1886d",
                             "label": "Price",
-                            "name": "instrument_price_8",
+                            "name": "instrument_price",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1768,7 +1720,7 @@
                         {
                             "key": "field_6206ee5f1886e",
                             "label": "Grow percentage",
-                            "name": "instrument_grow_percentage_8",
+                            "name": "instrument_grow_percentage",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1790,7 +1742,7 @@
         },
         {
             "key": "field_6206fcf16f9c9",
-            "label": "Membership instructions",
+            "label": "Membership Steps",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -1805,9 +1757,28 @@
             "endpoint": 0
         },
         {
-            "key": "field_620700abbc3b2",
-            "label": "Membership instructions",
-            "name": "membership_instructions",
+            "key": "field_6207057464223",
+            "label": "Title",
+            "name": "membership_steps_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "How To Become A Member",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620d2f2c77dfc",
+            "label": "Steps",
+            "name": "membership_steps",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -1817,31 +1788,12 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "row",
+            "layout": "block",
             "sub_fields": [
-                {
-                    "key": "field_6207057464223",
-                    "label": "Title",
-                    "name": "membership_instructions_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "How To Become A Member",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
                 {
                     "key": "field_62070124f57dc",
                     "label": "Step 1",
-                    "name": "step_1",
+                    "name": "membership_step_1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -1856,7 +1808,7 @@
                         {
                             "key": "field_62070164f57dd",
                             "label": "Title",
-                            "name": "step_title_1",
+                            "name": "step_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1875,7 +1827,7 @@
                         {
                             "key": "field_6207017df57de",
                             "label": "Description",
-                            "name": "step_description_1",
+                            "name": "step_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1896,7 +1848,7 @@
                 {
                     "key": "field_620701b772499",
                     "label": "Step 2",
-                    "name": "step_2",
+                    "name": "membership_step_2",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -1911,7 +1863,7 @@
                         {
                             "key": "field_620701b77249a",
                             "label": "Title",
-                            "name": "step_title_2",
+                            "name": "step_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1930,7 +1882,7 @@
                         {
                             "key": "field_620701b77249b",
                             "label": "Description",
-                            "name": "step_description_2",
+                            "name": "step_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1951,7 +1903,7 @@
                 {
                     "key": "field_620701b87249c",
                     "label": "Step 3",
-                    "name": "step_3",
+                    "name": "membership_step_3",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -1966,7 +1918,7 @@
                         {
                             "key": "field_620701b87249d",
                             "label": "Title",
-                            "name": "step_title_3",
+                            "name": "step_title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -1985,7 +1937,7 @@
                         {
                             "key": "field_620701b87249e",
                             "label": "Description",
-                            "name": "step_description_3",
+                            "name": "step_description",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -2042,7 +1994,7 @@
         },
         {
             "key": "field_62070e66650f8",
-            "label": "Tiers",
+            "label": "Tier",
             "name": "tiers",
             "type": "group",
             "instructions": "",
@@ -2863,10 +2815,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_620a5b5ad5ac1",
-            "label": "Footer",
-            "name": "footer",
-            "type": "group",
+            "key": "field_620a5b88d5ac2",
+            "label": "Disclaimer",
+            "name": "footer_disclaimer",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -2875,66 +2827,49 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_620a5b88d5ac2",
-                    "label": "Disclaimer",
-                    "name": "footer_disclaimer",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_620a5bb1d5ac3",
-                    "label": "Button text",
-                    "name": "footer_button_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Sign Up",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_620a5bbbd5ac4",
-                    "label": "Button link",
-                    "name": "footer_button_link",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "http:\/\/google.com",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
+            "default_value": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620a5bb1d5ac3",
+            "label": "Button text",
+            "name": "footer_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sign Up",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_620a5bbbd5ac4",
+            "label": "Button link",
+            "name": "footer_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "http:\/\/google.com",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -2955,5 +2890,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644851118
+    "modified": 1645034135
 }

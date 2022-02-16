@@ -2,7 +2,7 @@ const faqSection = document.querySelector('.faq')
 const categoryList = document.querySelector('.faq_categories_list');
 const categoryItems = categoryList.getElementsByClassName('faq_category_item_link')
 const categoryItemsArray = Array.from(categoryItems)
-const faqContent = document.querySelector('.faq_content')
+const faqContent = document.querySelector('.faq_list')
 let categoryID;
 
 

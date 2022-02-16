@@ -38,8 +38,8 @@ function ajax_get_posts_by_categoryID() {
     $query = new WP_Query($args);
     if($query->have_posts()): 
         while($query->have_posts()): $query->the_post();
-            the_title('<h2>', '</h2>');
-            the_content('p', '</p>');
+            the_title('<h3>', '</h3>');
+            the_content();
         endwhile;
     endif;
     wp_die();
