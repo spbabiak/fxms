@@ -32,8 +32,8 @@
     <div class="wrapper_advantages">
         <div class="wrapper">
             <div class="advantages_text">
-                <h2 class="advantages_title"><?php if($advantagesTitle): echo $advantagesTitle; endif; ?></h2>
-                <p class="advantages_description"><?php if($advantagesDescription): echo $advantagesDescription; endif; ?></p>
+                <h2 class="section_title"><?php if($advantagesTitle): echo $advantagesTitle; endif; ?></h2>
+                <p class="section_description"><?php if($advantagesDescription): echo $advantagesDescription; endif; ?></p>
             </div>
             <ul class="advantages_funds_list">
                 <li class="advantages_funds_item">
@@ -75,8 +75,8 @@
                 $platformInfoButtonText = get_field('platform_info_button_text');
             ?>
             <div class="platform_info_content">
-                <h2 class="platform_info_title"><?php if($platformInfoTitle): echo $platformInfoTitle; endif; ?></h2>
-                <p class="platform_info_description"><?php if($platformInfoDescription): echo $platformInfoDescription; endif; ?></p>
+                <h2 class="section_title"><?php if($platformInfoTitle): echo $platformInfoTitle; endif; ?></h2>
+                <p class="section_description"><?php if($platformInfoDescription): echo $platformInfoDescription; endif; ?></p>
                 <a class="btn" href="<?php if($platformInfoButtonLink): echo $platformInfoButtonLink; endif; ?>">
                     <?php if($platformInfoButtonText): echo $platformInfoButtonText; endif; ?>
                 </a>
@@ -94,7 +94,7 @@
                 $instruments = get_field('instruments');
             ?>
             <div class="instruments_info_content">
-                <h2 class="instruments_info_title"><?php if($instrumentsInfoTitle): echo $instrumentsInfoTitle; endif;  ?></h2>
+                <h2 class="section_title"><?php if($instrumentsInfoTitle): echo $instrumentsInfoTitle; endif;  ?></h2>
                 <ul class="instruments_list">
                     <? if($instruments): ?>
                     <?php foreach($instruments as $instrument): ?>
@@ -102,10 +102,10 @@
                             <div class="wrapper_instruments_list_item_icon">
                                 <span class="instruments_list_item_icon" style="width: 54px; height: 54px; display: inline-block; background-image: url('<?= $instrument['instrument_icon']; ?>');"></span>
                             </div>
-                            <span class="instruments_list_item_name"><?= $instrument['instrument_name']?></span>
+                            <span class="instruments_name"><?= $instrument['instrument_name']?></span>
                             <div class="instruments_numbers">
-                                <span class="instruments_list_item_price"><?= $instrument['instrument_price']?></span>
-                                <span class="instruments_list_item_grow_percentage"><?= $instrument['instrument_grow_percentage']?></span>
+                                <span class="instruments_price"><?= $instrument['instrument_price']?></span>
+                                <span class="instruments_grow_percentage"><?= $instrument['instrument_grow_percentage']?></span>
                             </div>
                         </li>
                     <?php endforeach;?>
@@ -125,13 +125,13 @@
                 $membershipSteps = get_field('membership_steps');
             ?>
             <div class="membership_steps_content">
-                <h2 class="membership_steps_title"><?php if($membershipTitle): echo $membershipTitle; endif; ?></h2>
+                <h2 class="section_title"><?php if($membershipTitle): echo $membershipTitle; endif; ?></h2>
                 <ul class="membership_steps_list">
                     <?php if($membershipSteps): ?>
                     <?php foreach($membershipSteps as $step): ?>
                         <li class="membership_steps_list_item">
-                            <h3 class="membership_steps_item_title"><?= $step['step_title']; ?></h3>
-                            <p class="membership_steps_item_description"><?= $step['step_description']; ?></p>
+                            <h3 class="membership_steps_title"><?= $step['step_title']; ?></h3>
+                            <p class="membership_steps_description"><?= $step['step_description']; ?></p>
                         </li>
                     <?php endforeach;?>
                     <?php endif;?>
@@ -149,7 +149,7 @@
                 $tiers = get_field('tiers');
             ?>
             <div class="tiers_content">
-                <h2 class="tiers_title"><?php if($tiersTitle): echo $tiersTitle; endif; ?></h2>
+                <h2 class="section_title"><?php if($tiersTitle): echo $tiersTitle; endif; ?></h2>
                 <div class="wrapper_tier_cards">
                     <?php if($tiers): ?>
                         <?php foreach($tiers as $tier): ?>
@@ -159,8 +159,8 @@
                                     <?php if($tier['tier_benefits']): ?>
                                     <?php foreach($tier['tier_benefits'] as $tierBenefit): ?>
                                         <li class="tier_card_benefits_item">
-                                            <span class="tier_card_benefits_item_title"><?= $tierBenefit['benefit_title']; ?></span>
-                                            <span class="tier_card_benefits_item_details"><?= $tierBenefit['benefit_details']; ?></span>
+                                            <span class="tier_card_benefits_title"><?= $tierBenefit['benefit_title']; ?></span>
+                                            <span class="tier_card_benefits_details"><?= $tierBenefit['benefit_details']; ?></span>
                                         </li>
                                     <?php endforeach;?>
                                     <?php endif; ?>
@@ -183,7 +183,7 @@
                 $categories = get_field('faq_categories');
             ?>
             <div class="faq_content">
-                <h2 class="faq_title"><?php if($FAQTitle): echo $FAQTitle; endif; ?></h2>
+                <h2 class="section_title"><?php if($FAQTitle): echo $FAQTitle; endif; ?></h2>
                 <?php 
                     $args = array(
                         'posts_type'=> 'post',

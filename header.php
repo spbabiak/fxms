@@ -17,18 +17,35 @@
                 $headerButtonLink = get_field('header_button_link');
                 $headerButtonText = get_field('header_button_text');
             ?>
-            <div class="wrapper_logo">
-                <img class="image_logo" src="<?php if($headerLogo): echo $headerLogo; endif; ?>" alt="FXMS Logo. Brain mark with gears inside and FXMS sign">
+            <div class="wrapper_header_content">
+                <div class="wrapper_logo">
+                    <img class="image_logo" src="<?php if($headerLogo): echo $headerLogo; endif; ?>" alt="FXMS Logo. Brain mark with gears inside and FXMS sign">
+                </div>
+                <div class="wrapper_nav_icon_burger">
+                    <span class="nav_icon_burger"></span>
+                </div>
+                <nav class="nav_header_mobile">
+                    <div class="wrapper_icon_cross">
+                        <span class="icon_cross"></span>
+                    </div>
+                        <?php
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'main-menu'
+                                ) 
+                            );
+                        ?>
+                </nav>
+                <nav class="nav_widescreen"> 
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'main-menu'
+                            ) 
+                        );
+                    ?>
+                </nav>
+                <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
             </div>
-            <nav class="nav">
-                <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'main-menu'
-                        ) 
-                    );
-                ?>
-            </nav>
-            <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
         </div>
     </header>

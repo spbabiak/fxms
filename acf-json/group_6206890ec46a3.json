@@ -1994,7 +1994,7 @@
         },
         {
             "key": "field_62070e66650f8",
-            "label": "Tier",
+            "label": "Tiers",
             "name": "tiers",
             "type": "group",
             "instructions": "",
@@ -2890,5 +2890,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645034135
+    "modified": 1645038337
 }

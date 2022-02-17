@@ -33,12 +33,13 @@
     --dark-text-color-8: #707070;                                           /* FAQ Section: answer, Footer Disclaimer */ 
     --dark-text-color-9: #666666;                                           /* FAQ Categories Items on white */ 
     --white-text-color-1: #ffffff;                                          /* Hero Section Title, Main Button Text, Tier Title on blue background, Tier Benefits on blue background, FAQ Section Active Category Text  */ 
-    --white-text-color-2: #ffffff;                                          /* Hero Section Description on dark background */ 
+    --white-text-color-2: #dddddd;                                          /* Hero Section Description on dark background */ 
     --green-text-color: #1fab2d;                                            /* Instruments Grow Percentage Text and Arrow Up*/ 
-    --filled-button-static-color: #305aef;                                  /* Filled Button Static Color, border, text */
+    --ghost-button-text: #305aef;                                           /* Blue Ghost Button Text Color*/
+    --filled-button-static-color: #305aef;                                  /* Filled Button Static Color */
     --filled-button-hover-color: #3962f4;                                   /* Filled Button Hover Color */   
     --filled-button-active-color: #0033e8;                                  /* Filled Button Active color */
-    --ghost-button-static-border-1: #305aef;                                /* Blue Ghost Button Static Border Color, Text */
+    --ghost-button-static-border-1: #305aef;                                /* Blue Ghost Button Static Border Color and Text Color */
     --ghost-button-hover-background-1: #C4C4C4;                             /* Blue Ghost Button Hover Background Color */
     --ghost-button-active-inner-shadow-1: inset 0px 0px 6px #0033e8;        /* Blue Ghost Button Active Inner Shadow Color */
     --ghost-button-static-border-2: #ffffff;                                /* White Ghost Button Static Border Color */
@@ -101,3 +102,250 @@ html {
     width: 87.5vw;
     margin: auto;
 }
+
+.wrapper_logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav_widescreen {
+    display: none;
+}
+
+header .btn {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    font-size: var(--normal-font-size-1);
+    font-weight: 700;
+    color: var(--ghost-button-text);
+}
+
+.menu li a {
+    font-size: var(--normal-font-size-2);
+    font-weight: 600;
+    color: var(--dark-text-color-1);
+}
+
+.slide_content_title {
+    font-size: var(--medium-font-size-2);
+    font-weight: 700;
+    line-height: var(--medium-line-height-2);
+    color: var(--white-text-color-1);
+}
+
+.slide_content_description {
+    font-size: var(--normal-font-size-2);
+    font-weight: 500;
+    line-height: var(--normal-line-height-2);
+    color: var(--white-text-color-2);
+}
+
+.section_title {
+    font-size: var(--medium-font-size-1);
+    font-weight: 600;
+    line-height: var(--normal-line-height-2);
+    color: var(--dark-text-color-2);    
+}
+
+.section_description {
+    font-size: var(--normal-font-size-1);
+    font-weight: 500;
+    line-height: var(--normal-line-height-1);
+    color: var(--dark-text-color-7);     
+}
+
+.slide_content_title,
+.section_title,
+.btn,
+.instruments_list_item_name,
+.membership_steps_title {
+    text-transform: uppercase;
+}
+
+.advantages_funds_item_text {
+    font-size: var(--normal-font-size-2);
+    font-weight: 700;
+    color: var(--dark-text-color-3);
+}
+
+.instruments_name {
+    font-size: var(--normal-font-size-2);
+    font-weight: 600;
+    color: var(--dark-text-color-5); 
+}
+
+.instruments_price,
+.instruments_grow_percentage {
+    font-size: var(--normal-font-size-1);
+    font-weight: 500;
+    color: var(--dark-text-color-6);
+}
+
+.instruments_grow_percentage {
+    color: var(--green-text-color);
+}
+
+.membership_steps_title {
+    font-size: var(--medium-font-size-2);
+    font-weight: 700;
+    color: var(--secondary-accent-color-1);
+}
+
+.membership_steps_description {
+    font-size: var(--normal-font-size-2);
+    font-weight: 500;
+    line-height: var(--normal-line-height-2);
+    color: var(--dark-text-color-4);   
+}
+
+.tier_card_title {
+    font-size: var(--medium-font-size-1);
+    font-weight: 700;
+    color: var(--secondary-accent-color-1);   
+}
+
+.tier_card_benefits_title,
+.tier_card_benefits_title {
+    font-size: var(--normal-font-size-1);
+    font-weight: 500;
+    color: var(--dark-text-color-4);
+}
+
+.faq_list h3 {
+    font-size: var(--medium-font-size-1);
+    font-weight: 600;
+    line-height: var(--normal-line-height-2);
+    color: var(--dark-text-color-3);
+}
+
+.faq_list p {
+    font-size: var(--normal-font-size-1);
+    font-weight: 400;
+    line-height: var(--normal-line-height-1);
+    color: var(--dark-text-color-8);    
+}
+
+.faq_category_item_link {
+    font-size: var(--normal-font-size-2);
+    font-weight: 600;
+    color: var(--dark-text-color-9);
+}
+
+.footer_disclaimer_text {
+    font-size: var(--normal-font-size-2);
+    font-weight: 400;
+    line-height: var(--normal-line-height-1);
+    color: var(--dark-text-color-9);     
+}
+
+footer .btn {
+    display: none;
+}
+
+.wrapper_nav_icon_burger {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.nav_icon_burger {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 5px;
+    background-color: var(--secondary-accent-color-2);
+    border-radius: var(--main-border-radius);
+}
+
+.nav_icon_burger::before {
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-color: var(--secondary-accent-color-2);
+    border-radius: var(--main-border-radius);
+}
+
+.nav_icon_burger::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-color: var(--secondary-accent-color-2);
+    border-radius: var(--main-border-radius);
+}
+
+.wrapper_icon_cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon_cross {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.icon_cross::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nav_header_mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fbfbfb;
+    transform: translateY(-360px);
+}
+
+.wrapper_header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav_header_mobile .menu-main-menu-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.nav_header_mobile .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav_header_mobile .menu li:nth-child(n+2) {
+    margin-top: 40px;
+}
+
