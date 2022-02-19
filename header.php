@@ -45,7 +45,7 @@
                         );
                     ?>
                 </nav>
-                <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
+                <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn ghost_btn_1"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
             </div>
         </div>
     </header>

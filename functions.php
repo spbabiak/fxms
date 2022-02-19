@@ -27,19 +27,20 @@ add_action('wp_enqueue_scripts', 'load_js');
 // AJAX
 function ajax_get_posts_by_categoryID() {
     $categoryID = !empty($_POST['categoryID']) ? esc_attr($_POST['categoryID']) : false;
-    // if(empty($categoryID)) wp_die();
     $args = array(
         'posts_type'=> 'post',
         'posts_per_page' => -1,
         'cat' => $categoryID
     );
     
-    
     $query = new WP_Query($args);
     if($query->have_posts()): 
         while($query->have_posts()): $query->the_post();
-            the_title('<h3>', '</h3>');
+            the_title('<div class="wrapper_faq_content"><div class="wrapper_faq_question"><h3>', '</h3> <svg class="icon_arrow" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.87 12.5a1 1 0 0 1-1.74 0L1.07 2A1 1 0 0 1 1.94.5h12.12a1 1 0 0 1 .87 1.5L8.87 12.5Z"/>
+        </svg></div>');
             the_content();
+            echo '</div>';
         endwhile;
     endif;
     wp_die();

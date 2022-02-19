@@ -171,7 +171,7 @@
                             "label": "Title",
                             "name": "slide_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -355,7 +355,7 @@
                             "label": "Title",
                             "name": "slide_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -539,7 +539,7 @@
                             "label": "Title",
                             "name": "slide_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -686,7 +686,7 @@
             "label": "Title",
             "name": "our_advantages_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -833,7 +833,7 @@
             "label": "Title",
             "name": "platform_info_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -925,7 +925,7 @@
             "label": "Title",
             "name": "instruments_info_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1761,7 +1761,7 @@
             "label": "Title",
             "name": "membership_steps_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1978,7 +1978,7 @@
             "label": "Title",
             "name": "tiers_cards_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -2762,7 +2762,7 @@
             "label": "Title",
             "name": "faq_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "To emphasize the text with blue color place it between &lt;span class=\"text_emphasize\"> and &lt;\/span>.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -2890,5 +2890,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645038337
+    "modified": 1645298967
 }
