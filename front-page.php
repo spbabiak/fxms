@@ -10,11 +10,10 @@
                 <?php if($slide): ?>
                 <div class="wrapper_slide_content" style="background-image: url('<?= $slide['slide_image']; ?>');">
                     <div class="wrapper">
-                        <div class="slide_content" style="width: <?= $slide['slide_content_width'] . '%'?>; text-align: <?= $slide['slide_content_alignment']?>;">
+                        <div class="slide_content" style="text-align: <?= $slide['slide_content_alignment']?>;">
                             <h1 class="slide_content_title"><?= $slide['slide_title']; ?></h1>
                             <p class="slide_content_description"><?= $slide['slide_description']; ?></p>
                             <a class="btn btn_fill" href="<?= $slide['slide_button_link']; ?>"><?= $slide['slide_button_text']; ?></a>
-                            
                         </div>
                     </div>
                 </div>
@@ -108,7 +107,7 @@
                 <h2 class="section_title"><?php if($platformInfoTitle): echo $platformInfoTitle; endif; ?></h2>
                 <img class="platform_image_demo" srcset="<?php echo get_template_directory_uri() . '/images/platform_demo_215w.png'; ?> 215w,
                             <?php echo get_template_directory_uri() . '/images/platform_demo_499w.png'; ?> 499w"
-                    sizes="(max-width: 768px) 215px,
+                    sizes="(max-width: 599px) 215px,
                                 499px"
                     src="<?php echo get_template_directory_uri() . '/images/platform_demo_499w.png'; ?>" alt="Platform Demo on Mobile and Desktop Devices">
                 <p class="section_description"><?php if($platformInfoDescription): echo $platformInfoDescription; endif; ?></p>
@@ -116,7 +115,6 @@
                     <?php if($platformInfoButtonText): echo $platformInfoButtonText; endif; ?>
                 </a>
             </div>
-            <div class="wrapper_planform_info_image"></div>
         </div>
     </div>
 </section>
@@ -130,7 +128,7 @@
             ?>
             <div class="instruments_info_content">
                 <h2 class="section_title"><?php if($instrumentsInfoTitle): echo $instrumentsInfoTitle; endif;  ?></h2>
-                <ul class="instruments_list">
+                <ul class="instruments_list snaps_inline">
                     <?php if($instruments): ?>
                     <?php foreach($instruments as $instrument): ?>
                         <li class="instruments_list_item">
@@ -227,14 +225,14 @@
 </section>
 
 <section id="faq_section" class="faq">
-    <div class="wrapper_faq">
-        <div class="wrapper">
+    <div class="wrapper">
             <?php 
                 $FAQTitle = get_field('faq_title');
                 $categories = get_field('faq_categories');
             ?>
             <div class="faq_content">
                 <h2 class="section_title"><?php if($FAQTitle): echo $FAQTitle; endif; ?></h2>
+                <div class="wrapper_faq">
                 <?php 
                     $args = array(
                         'posts_type'=> 'post',

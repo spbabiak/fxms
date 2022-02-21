@@ -266,32 +266,6 @@
                             "return_format": "value",
                             "ajax": 0,
                             "placeholder": ""
-                        },
-                        {
-                            "key": "field_6206a8c87df10",
-                            "label": "Content width",
-                            "name": "slide_content_width",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "50": "50%",
-                                "75": "75%",
-                                "100": "100%"
-                            },
-                            "default_value": false,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
                         }
                     ]
                 },
@@ -450,32 +424,6 @@
                             "return_format": "value",
                             "ajax": 0,
                             "placeholder": ""
-                        },
-                        {
-                            "key": "field_6206ae1efcecb",
-                            "label": "Content width",
-                            "name": "slide_content_width",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "50": "50%",
-                                "75": "75%",
-                                "100": "100%"
-                            },
-                            "default_value": false,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
                         }
                     ]
                 },
@@ -626,32 +574,6 @@
                             "choices": {
                                 "center": "Center",
                                 "left": "Left"
-                            },
-                            "default_value": false,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_6206ae24fced3",
-                            "label": "Content width",
-                            "name": "slide_content_width",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "50": "50%",
-                                "75": "75%",
-                                "100": "100%"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -2890,5 +2812,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645298967
+    "modified": 1645398274
 }

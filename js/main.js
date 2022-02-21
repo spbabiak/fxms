@@ -1,7 +1,6 @@
 const faqSection = document.querySelector('.faq')
 const categoryList = document.querySelector('.faq_categories_list');
 const categoryListItems = categoryList.getElementsByClassName('faq_category_item')
-// const categoryLinkItems = categoryList.getElementsByClassName('faq_category_item_link')
 const categoryItemsArray = Array.from(categoryListItems)
 const faqContent = document.querySelector('.faq_list')
 
@@ -13,6 +12,13 @@ const slider = document.querySelector('.wrapper_slider')
 const sliderItems = document.getElementsByClassName('wrapper_slide_content')
 const slideIndicatorItems = document.getElementsByClassName('slide_indicator')
 const slideIndicatorItemsArray = Array.from(slideIndicatorItems)
+
+const instrumentsList = document.querySelector('.instruments_list')
+const instrumentsListItems = document.getElementsByClassName('instruments_list_item');
+const instrumentsListItemsArray = Array.from(instrumentsListItems);
+const btnShowMore = document.querySelector('.service_btn');
+
+let clickCounter = 0;
 let sliderItemsArray = Array.from(sliderItems)
 let screenWidth = document.body.clientWidth 
 let slideWidth = 0
@@ -85,16 +91,11 @@ function slideAnimation() {
 
 slideAnimation()
 window.addEventListener("resize", () => {
-    screenWidth = document.body.clientWidth
+    screenWidth = document.body.clientWidth 
     clearTimeout(animation)
     slideAnimation()
 });
 
-const instrumentsListItems = document.getElementsByClassName('instruments_list_item');
-const instrumentsListItemsArray = Array.from(instrumentsListItems);
-const btnShowMore = document.querySelector('.service_btn');
-
-let clickCounter = 0;
 if(btnShowMore) {
 	btnShowMore.addEventListener('click', event => {
         event.preventDefault()

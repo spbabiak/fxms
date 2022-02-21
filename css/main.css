@@ -42,7 +42,7 @@
     --ghost-button-static-border-2: #ffffff;                                /* White Ghost Button Static Border Color */
     --ghost-button-hover-background-2: rgba(220, 221, 222, .12);            /* White Ghost Button Hover Background Color */
     --ghost-button-active-inner-shadow-2: inset 0px 1px 8px #dcddde;        /* White Ghost Button Hover Inner Shadow Color */
-    --image-overlay-background: rgba(106, 130, 255, .21);                   /* Hero Image Overlay Background Color */
+    --image-overlay-background: rgba(0, 14, 88, 0.41);                   /* Hero Image Overlay Background Color */
     --section-overlay-background: #F5F8FF;                                  /* Sections Overlay Background Color */
     --divider-color-1: #e5f3ff;                                             /* Advantages Section Title and Description Divider, Icon and Icons title Divider */
     --divider-color-2: rgba(89, 116, 255, .1);                              /* Tier Benefits Divider on white, FAQ Categories Divider */
@@ -123,8 +123,12 @@ section:nth-child(n+3) {
 
 .wrapper {
     width: 87.5vw;
+    max-width: 1040px;
     height: 100%;
     margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .wrapper_logo {
@@ -211,18 +215,6 @@ section:nth-child(n+3) {
     color: var(--dark-text-color-7);     
 }
 
-.slide_content_title,
-.section_title,
-.btn,
-.instruments_list_item_name,
-.membership_steps_title {
-    text-transform: uppercase;
-}
-
-.advantages_funds_item:nth-child(n+3) {
-    margin-top: 20px;
-}
-
 .advantages_funds_item_text {
     font-size: var(--normal-font-size-2);
     font-weight: 700;
@@ -266,7 +258,7 @@ section:nth-child(n+3) {
 }
 
 .tier_card_benefits_title,
-.tier_card_benefits_title {
+.tier_card_benefits_details {
     font-size: var(--normal-font-size-1);
     font-weight: 500;
     color: var(--dark-text-color-4);
@@ -304,6 +296,18 @@ section:nth-child(n+3) {
     align-items: center;
     width: 50px;
     height: 50px;
+}
+
+.slide_content_title,
+.section_title,
+.btn,
+.instruments_list_item_name,
+.membership_steps_title {
+    text-transform: uppercase;
+}
+
+.advantages_funds_item:nth-child(n+3) {
+    margin-top: 20px;
 }
 
 .nav_icon_burger {
@@ -376,7 +380,7 @@ header {
     width: 100%;
     background-color: #fbfbfb;
     transform: translateY(-360px);
-    transition: 'transform 2s';
+    transition: 'transform 1s';
     transition-timing-function: 'ease-out';
     z-index: 2;
 }
@@ -475,7 +479,7 @@ header {
     z-index: 1;
     top: 50%;
     left: 0;
-    transform: translateY(-70%);
+    transform: translateY(-60%);
 }
 
 .wrapper_slide_content_description {
@@ -507,11 +511,14 @@ header {
 }
 
 .advantages_funds_list {
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    align-items: center;
+    width: 100%;
+    max-width: 388px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .icon_overlay {
@@ -568,17 +575,6 @@ header {
     left: 0;
 }
 
-/* .wrapper_platform_info::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/platform_demo_desktop.png');
-    z-index: 1;
-} */
-
 .platform_image_demo {
     display: block;
     margin: auto;
@@ -590,11 +586,16 @@ header {
     transform: translateX(-50%);
 }
 
+.platform_info_content .section_title {
+    margin-bottom: 30px;
+}
+
 .platform_info_content .section_description {
-    text-align: left;
+    margin-top: 20px;
 }
 
 /* Instruments */
+
 .instruments_list {
     display: flex;
     justify-content: space-between;
@@ -604,11 +605,12 @@ header {
 }
 
 .instruments_list_item {
+    display: flex;
+    flex-shrink: 0;
     padding: 23px 30px 23px 20px;
     box-shadow: 0px 3px 9px rgba(129, 129, 129, 0.15), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
     width: 255px;
     height: 100px;
-    display: flex;
 }
 
 .instruments_list_item:nth-child(4),
@@ -619,8 +621,12 @@ header {
 	display: none;
 }
 
-.instruments_list_item:not(.instruments_list_item:last-child) {
+.instruments_list_item {
     margin-bottom: 15px;
+}
+
+.instruments_list_item:last-child {
+    margin-bottom: 0;
 }
 
 .instruments_list_item .icon_arrow {
@@ -660,22 +666,34 @@ header {
 
 .membership_steps_list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .membership_steps_list_item {
     width: 100%;
     height: 100%;
     max-width: 300px;
+    max-height: 300px;
     padding: 30px;
     box-shadow: 0px 3px 9px rgba(129, 129, 129, 0.24), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
     border-radius: var(--main-border-radius);  
     background-color: #fff; 
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-.membership_steps_list_item:not(.membership_steps_list_item:last-child) {
+.membership_steps_list_item {
     margin-bottom: 30px;
+}
+
+.membership_steps_list_item p {
+    margin-bottom: 91px;
+}
+
+.membership_steps_list_item:last-child {
+    margin-bottom: 0;
 }
 
 .step_number {
@@ -684,9 +702,9 @@ header {
     line-height: .75;
     text-shadow: 3px 2px 4px rgba(114, 114, 114, 0.15);
     color: var(--main-accent-color-1);
-    display: block;
-    text-align: right;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
 }
 
 .membership_steps_description {
@@ -698,7 +716,9 @@ header {
 .wrapper_tier_cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: auto;
 }
 
 .tier_card {
@@ -706,7 +726,7 @@ header {
     top: 0;
     left: 0;
     padding: 35px 32px 35px 32px;
-    box-shadow: var(--box-shadow-on-white);
+    box-shadow: 0px 3px 11px rgba(129, 129, 129, 0.24), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
     border-radius: var(--main-border-radius);
     letter-spacing: -0.015em;
     width: 100%;
@@ -797,8 +817,8 @@ header {
     height: 13px;
     flex-shrink: 0;
     transform: rotate(-90deg);
-    margin-left: 70px;
     margin-top: 7px;
+    margin-left: 60px;
 }
 
 .wrapper_faq_question .icon_arrow path {
@@ -905,17 +925,546 @@ footer {
     box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.15);
 }
 
+footer .wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+footer .wrapper_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .wrapper_footer_nav {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .nav_footer {
-    flex-grow: 1;
-    margin-left: 54px;
+    margin-left: 110px;
+    margin-bottom: 25px;
 }
 
 .nav_footer .menu li:not(.nav_footer .menu li:last-child) {
     margin-bottom: 30px;
+}
+
+.instruments_list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.instruments_list::-webkit-scrollbar-track {
+    background: var(--divider-color-2);
+    border-radius: var(--main-border-radius);
+}
+
+.instruments_list::-webkit-scrollbar-thumb {
+    background: var(--divider-color-1);
+    border-radius: var(--main-border-radius);
+}
+
+.instruments_list::-webkit-scrollbar-thumb:hover {
+    background: var(--main-accent-color-1);        
+}
+
+@supports(scrollbar-color: red blue) {
+    .instruments_list {
+        scrollbar-color: var(--main-accent-color-1) var(--divider-color-2); 
+        scrollbar-width: thin;
+    }   
+}
+
+/* Media Queries ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 680px) {
+
+    .advantages_text .section_title {
+        margin-bottom: 0;
+    }
+
+    .advantages_funds_list {
+        justify-content: space-between;
+        max-width: unset;
+    }
+
+    .advantages_funds_item:nth-child(n+3) {
+        margin-top: 0;
+    }
+
+    .service_btn {
+        display: none;
+    }
+
+    .membership_steps_list_item p {
+        margin-bottom: 111px;
+    }
+
+    .instruments_list_item:nth-child(4), 
+    .instruments_list_item:nth-child(5), 
+    .instruments_list_item:nth-child(6), 
+    .instruments_list_item:nth-child(7), 
+    .instruments_list_item:nth-child(8) {
+        display: flex;
+    }
+
+    .instruments_list_item:last-child {
+        margin-bottom: 15px;
+    }
+
+    .instruments_list_item {
+        margin-right: 30px;
+    }
+
+    .instruments_list_item:last-child {
+        margin-right: 0;
+    }
+
+    .instruments_list {
+        flex-wrap: unset;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .snaps_inline {
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: 1rem;
+    }
+
+    .snaps_inline > * {
+        scroll-snap-align: start;
+    }
+
+    .instruments_list::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    .instruments_list::-webkit-scrollbar-track {
+        background: var(--divider-color-2);
+        border-radius: var(--main-border-radius);
+    }
+    
+    .instruments_list::-webkit-scrollbar-thumb {
+        background: var(--divider-color-1);
+        border-radius: var(--main-border-radius);
+    }
+    
+    .instruments_list::-webkit-scrollbar-thumb:hover {
+        background: var(--main-accent-color-1);        
+    }
+    
+    @supports(scrollbar-color: red blue) {
+        .instruments_list {
+            scrollbar-color: var(--main-accent-color-1) var(--divider-color-2); 
+            scrollbar-width: thin;
+        }   
+    }
+
+    .nav_footer .menu li:not(.nav_footer .menu li:last-child) {
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+
+    .wrapper_footer_nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    footer .wrapper_logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav_footer .menu {
+        display: flex;
+    }
+
+    .footer_disclaimer_wrapper {
+        margin-left: 110px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+	.slide_content_title {
+        font-size: var(--large-font-size-2);
+    }
+    
+    .slide_content_description {
+        font-size: var(--medium-font-size-2);
+    }
+    
+    .section_title {
+        font-size: var(--medium-font-size-2);
+    }
+    
+    .section_description {
+        font-size: var(--normal-font-size-2);  
+    }
+    
+    .tier_card_title {
+        font-size: var(--medium-font-size-1);
+    }
+
+    .wrapper_nav_icon_burger {
+        display: none;
+    }
+
+    .wrapper_logo {
+        width: 88px;
+        height: 88px;
+    }
+
+    .nav_header_mobile {
+        display: none;
+    }
+
+    .nav_widescreen {
+        display: block;
+    }
+
+    .nav_widescreen .menu {
+        display: flex;
+    }
+
+    .nav_widescreen .menu li:not(.nav_widescreen .menu li:last-child) {
+        margin-right: 50px;
+    }
+
+    .nav_widescreen .menu li a {
+        transition-duration: .3s;
+        transition-property: color;
+        transition-delay: .3s;
+    }
+
+    .nav_widescreen .menu li a:hover {
+        color: #0033e8;
+    }
+    
+    header .btn {
+        display: block;
+    }
+
+    .wrapper_slide_content {
+        height: 632px;
+    }
+
+    .wrapper_slide_content:last-child .slide_content_description {
+        width: 370px;
+    }
+
+    .advantages_text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advantages_text .section_title {
+        text-align: left;
+        margin-right: 68px;
+        min-width: 300px;
+        max-width: 500px;
+    }
+
+    .advantages_text .section_description {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 300px;
+        max-width: 430px;    
+    }
+
+    .advantages_text .section_description::before {
+        top: 50%;
+        left: -38px;
+        width: 8px;
+        height: 100%;
+        transform: translateY(-50%);
+    }
+
+    .wrapper_slide_content .btn, .platform_info_content .btn {
+        margin-top: 30px;
+    }
+
+    .platform_info_content .section_description {
+        margin-top: 40px;
+    }
+
+    .membership_steps {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .membership_steps_list { 
+        align-items: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 672px;
+        margin: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .membership_steps_list_item:not(.membership_steps_list_item:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .membership_steps_list_item {
+        position: relative;
+        top: 0;
+        left: 0;    
+    }
+
+    .membership_steps_list_item::before {
+        content: '';
+        width: 82px;
+        height: 82px;
+        position: absolute;
+        bottom: -40px;
+        left: -25px;   
+        background-color: var(--decoration-color-1);
+        border-radius: var(--main-border-radius);
+    }
+
+    .membership_steps_list_item:last-child::before {
+        left: unset;
+        top: -15px;
+        right: -25px;
+        z-index: -1;
+    }
+
+    .membership_steps_list_item::after {
+        content: '';
+        width: 40px;
+        height: 33px;
+        position: absolute;
+        top: 50%;
+        left: -57px;
+        transform: translateY(-50%);
+        background-image: url('../images/icon_arrow_decoration.svg');
+        background-repeat: no-repeat;
+    }
+
+    .membership_steps_list_item:first-child:after {
+        left: unset;
+        right: -57px;
+    }
+
+    .membership_steps_list_item:nth-child(2)::before,
+    .membership_steps_list_item:nth-child(2)::after {
+        display: none;
+    }
+
+    .membership_steps_list::before {
+        content: '';
+        position: absolute;
+        bottom: 44px;
+        right: 14px;
+        background-image: url('../images/gears_decoration.svg');
+        width: 291px;
+        height: 211px;
+    }
+
+    .tier_card:first-child {
+        margin-bottom: 0;
+    }
+
+    .wrapper_faq {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 735px;
+        margin: auto;
+    }
+
+    .faq_categories_list {
+        margin-top: 0;
+        margin-right: 35px;
+        flex-shrink: 0;
+    }
+
+    .faq_list {
+        width: 55%;
+    }
+
+    footer .btn {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .nav_footer {
+        margin-bottom: 0;
+        padding-top: 12px;
+    }
+
+    .nav_footer .menu li a {
+        transition-duration: .3s;
+        transition-property: color;
+        transition-delay: .3s;
+    }
+
+    .nav_footer .menu li a:hover {
+        color: #0033e8;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    .wrapper_slide_content:nth-child(2) .slide_content_description {
+        width: 540px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    
+    .section_title {
+        font-size: var(--large-font-size-1);
+    }
+
+    .faq_list h3 {
+        font-size: var(--medium-font-size-2);
+    }
+
+    .faq_list p {
+        font-size: var(--normal-font-size-2);
+    }
+
+    .wrapper_slide_content:first-child .slide_content {
+        width: 80% !important;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+    .wrapper_slide_content:nth-child(2) .slide_content {
+        width: 90% !important;
+    }
+
+    .wrapper_slide_content:last-child .slide_content {
+        width: 40% !important;
+    }
+
+    section:nth-child(n+3) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    .advantages_funds_list {
+        margin-top: 50px;
+    }
+
+    .platform_info_content .section_description {
+        width: 425px;
+        margin-top: 0;
+    }
+
+    .platform_info_content .section_title {
+        margin-bottom: 40px;
+        text-align: left;
+        width: 525px;
+    }
+
+    .platform_info_content .btn {
+        position: relative;
+        left: 0;
+        transform: unset;
+      }
+
+    .platform_image_demo {
+        display: none;
+    }
+
+    .platform_info_content {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .platform_info_content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 499px;
+        height: 374px;
+        background-image: url('../images/platform_demo_499w.png');
+    }
+
+    .instruments_list {
+        flex-wrap: wrap;
+    }
+
+    .instruments_list_item {
+        width: 230px;
+    }
+
+    .instruments_list_item:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .instruments_list_item:nth-child(1),
+    .instruments_list_item:nth-child(2),
+    .instruments_list_item:nth-child(3),
+    .instruments_list_item:nth-child(4) {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .membership_steps_list {
+        width: unset;
+    }
+
+    .membership_steps_list_item:not(.membership_steps_list_item:last-child) {
+        margin-bottom: 0;
+    }
+
+    .membership_steps_list_item {
+        width: 300px;
+        height: 300px;
+    }
+
+    .membership_steps_list::before {
+        display: none;
+    }
+
+    .tiers_content .section_title {
+        margin-bottom: 50px;
+    }
+
+    .wrapper_faq {
+        max-width: 977px;
+        justify-content: space-around;
+    }
+
+    .faq_list {
+        width: 50%;
+    }
+
+    footer {
+        padding-top: 40px;
+    }
+    
+    footer .wrapper_logo {
+        width: 127px;
+        height: 127px;
+    }
+
+    .nav_footer,
+    .footer_disclaimer_wrapper  {
+        margin-left: 223px;
+        margin-bottom: 15px;
+    }
+
+    .footer_disclaimer_wrapper  {
+        width: 67%;
+    }
+
 }
