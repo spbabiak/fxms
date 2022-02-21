@@ -13,7 +13,7 @@
                         <div class="slide_content" style="text-align: <?= $slide['slide_content_alignment']?>;">
                             <h1 class="slide_content_title"><?= $slide['slide_title']; ?></h1>
                             <p class="slide_content_description"><?= $slide['slide_description']; ?></p>
-                            <a class="btn btn_fill" href="<?= $slide['slide_button_link']; ?>"><?= $slide['slide_button_text']; ?></a>
+                            <a class="btn btn_fill cta" href="<?php if($slide['slide_button_link']): echo $slide['slide_button_link']; else: echo '#'; endif; ?>"><?= $slide['slide_button_text']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                                 499px"
                     src="<?php echo get_template_directory_uri() . '/images/platform_demo_499w.png'; ?>" alt="Platform Demo on Mobile and Desktop Devices">
                 <p class="section_description"><?php if($platformInfoDescription): echo $platformInfoDescription; endif; ?></p>
-                <a class="btn btn_fill" href="<?php if($platformInfoButtonLink): echo $platformInfoButtonLink; endif; ?>">
+                <a class="btn btn_fill cta" href="<?php if($platformInfoButtonLink): echo $platformInfoButtonLink; else: echo '#'; endif; ?>">
                     <?php if($platformInfoButtonText): echo $platformInfoButtonText; endif; ?>
                 </a>
             </div>
@@ -211,9 +211,9 @@
                                     <?php endif; ?>
                                 </ul>
                                 <?php if($i == 1): ?>
-                                    <a class="btn ghost_btn_1" href="<?= $tier['tier_button_link']; ?>"><?= $tier['tier_button_text']; ?></a>
+                                    <a class="btn ghost_btn_1 cta" href="<?php if($tier['tier_button_link']): echo $tier['tier_button_link']; else: echo '#'; endif; ?>"><?= $tier['tier_button_text']; ?></a>
                                 <?php elseif($i == 2): ?>
-                                    <a class="btn ghost_btn_2" href="<?= $tier['tier_button_link']; ?>"><?= $tier['tier_button_text']; ?></a>    
+                                    <a class="btn ghost_btn_2 cta" href="<?php if($tier['tier_button_link']): echo $tier['tier_button_link']; else: echo '#'; endif; ?>"><?= $tier['tier_button_text']; ?></a>    
                                 <?php endif; ?>        
                             </div>
                         <?php endforeach;?>

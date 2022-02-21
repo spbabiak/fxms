@@ -51,6 +51,7 @@ add_action('wp_ajax_nopriv_load_posts', 'ajax_get_posts_by_categoryID');
 
 // Theme Options
 add_theme_support('menus');
+add_theme_support( 'title-tag' );
 
 // Menus
 register_nav_menus(

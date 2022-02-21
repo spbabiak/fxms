@@ -23,7 +23,7 @@
                         ?>
                     </nav>
                     
-                    <a href="<?php if($footerButtonLink): echo $footerButtonLink; endif; ?>" target="_blank" class="btn ghost_btn_1">
+                    <a href="<?php if($footerButtonLink): echo $footerButtonLink; else: echo '#'; endif; ?>" class="btn ghost_btn_1 cta">
                         <?php if($footerButtonText): echo $footerButtonText; endif; ?>
                     </a>
                     <div class="footer_disclaimer_wrapper">

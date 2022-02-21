@@ -1,12 +1,12 @@
 const faqSection = document.querySelector('.faq')
-const categoryList = document.querySelector('.faq_categories_list');
+const categoryList = document.querySelector('.faq_categories_list')
 const categoryListItems = categoryList.getElementsByClassName('faq_category_item')
 const categoryItemsArray = Array.from(categoryListItems)
 const faqContent = document.querySelector('.faq_list')
 
 const menuIcon = document.querySelector('.wrapper_nav_icon_burger')
 const menu = document.querySelector('.nav_header_mobile')
-const closeIcon = document.querySelector('.wrapper_icon_cross')
+const closeIcon = document.querySelector('header .wrapper_icon_cross')
 
 const slider = document.querySelector('.wrapper_slider')
 const sliderItems = document.getElementsByClassName('wrapper_slide_content')
@@ -14,17 +14,38 @@ const slideIndicatorItems = document.getElementsByClassName('slide_indicator')
 const slideIndicatorItemsArray = Array.from(slideIndicatorItems)
 
 const instrumentsList = document.querySelector('.instruments_list')
-const instrumentsListItems = document.getElementsByClassName('instruments_list_item');
-const instrumentsListItemsArray = Array.from(instrumentsListItems);
-const btnShowMore = document.querySelector('.service_btn');
+const instrumentsListItems = document.getElementsByClassName('instruments_list_item')
+const instrumentsListItemsArray = Array.from(instrumentsListItems)
+const btnShowMore = document.querySelector('.service_btn')
 
-let clickCounter = 0;
+const cta = document.getElementsByClassName('cta')
+const ctaArray = Array.from(cta)
+const form = document.querySelector('.wpcf7')
+const closeFormIcon = form.querySelector('.wrapper_icon_cross') 
+
+let clickCounter = 0
 let sliderItemsArray = Array.from(sliderItems)
-let screenWidth = document.body.clientWidth 
+let screenWidth = document.body.clientWidth
 let slideWidth = 0
 let animation
 let activeSlideIndicator = slideIndicatorItemsArray[0].style.backgroundColor = 'rgba(48, 90, 239, .82)'
 let notActiveSlideIndicator
+
+ctaArray.forEach(item => {
+    item.onclick = e => {
+        e.preventDefault()
+        console.log('Hello')
+        form.style.top = window.scrollY + window.innerHeight / 2 + 'px'
+        form.style.transform = 'translate(-50%, -50%)'
+        form.style.transition = 'top .6s'    
+    }
+})
+
+closeFormIcon.onclick = () => {
+    form.style.top = 0
+    form.style.transform = 'translate(-50%, -100%)'
+    form.style.transition = 'top 1s'    
+}
 
 menuIcon.onclick = () => {
     menu.style.transform = 'translateY(0)'
@@ -79,6 +100,7 @@ function slideAnimation() {
 
             slider.style.transition = 'left 2s ease-out'
             slideWidth = screenWidth * -(i + 1)
+            console.log(slideWidth)
             if(slideWidth > -screenWidth * sliderItemsArray.length) {
                 slider.style.left = slideWidth + 'px'
             } else {
@@ -94,7 +116,7 @@ window.addEventListener("resize", () => {
     screenWidth = document.body.clientWidth 
     clearTimeout(animation)
     slideAnimation()
-});
+})
 
 if(btnShowMore) {
 	btnShowMore.addEventListener('click', event => {
@@ -129,9 +151,9 @@ if(btnShowMore) {
 			btnShowMore.firstChild.textContent = "Show more"
             btnShowMore.firstElementChild.style.transform = 'rotate(0deg)' 
             btnShowMore.firstElementChild.style.transition = 'transform 1s'
-			clickCounter = 0;
+			clickCounter = 0
 		} 	
-	});
+	})
 }
 
 function openCloseAnswer() {

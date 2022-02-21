@@ -84,6 +84,10 @@ html {
     letter-spacing: 0.035em;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1, h2 {
     margin: 0;  
 }
@@ -108,11 +112,11 @@ footer .btn {
     display: none;
 }
 
-section:nth-child(2n+2) {
+section:nth-child(2n+3) {
     background-color: var(--section-overlay-background);
 }
 
-section:nth-child(n+3) {
+section:nth-child(n+4) {
     padding-top: 40px;
     padding-bottom: 50px;
 }
@@ -126,9 +130,6 @@ section:nth-child(n+3) {
     max-width: 1040px;
     height: 100%;
     margin: auto;
-    position: relative;
-    top: 0;
-    left: 0;
 }
 
 .wrapper_logo {
@@ -347,6 +348,7 @@ section:nth-child(n+3) {
     right: 20px;
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .icon_cross {
@@ -447,6 +449,8 @@ header {
 
 .wrapper_slide_content {
     position: relative;
+    top: 0;
+    left: 0;
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -611,6 +615,7 @@ header {
     box-shadow: 0px 3px 9px rgba(129, 129, 129, 0.15), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
     width: 255px;
     height: 100px;
+    background-color: #fff;
 }
 
 .instruments_list_item:nth-child(4),
@@ -718,6 +723,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 700px;
+    align-items: center;
+    max-width: 700px;
+    flex-direction: column;
     margin: auto;
 }
 
@@ -976,13 +984,55 @@ footer .wrapper_logo {
     }   
 }
 
+/* Form */
+
+.wpcf7 {
+    width: 100%;
+    max-width: 481px;
+    position: absolute;
+    top: -485px;
+    left: 50%;
+    z-index: 6;
+}
+
+.wpcf7-form {
+    padding: 60px;
+    background: #fbfbfb;
+    box-shadow: 0px 3px 9px rgba(129, 129, 129, 0.24), inset 2px 2px 4px rgba(245, 245, 245, 0.14);
+}
+
+.wpcf7-form p {
+    margin-bottom: 20px;
+}
+
+.wpcf7-form p:nth-child(5),
+.wpcf7-form p:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.wpcf7-form input:not(.wpcf7-submit) {
+    margin-top: 10px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 340px;
+    border: 1px solid #9b9b9b;
+    border-radius: var(--main-border-radius);
+}
+
+.wpcf7-submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: unset;
+    border: none;
+    margin-top: 35px;
+}
+
 /* Media Queries ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 680px) {
-
-    .advantages_text .section_title {
-        margin-bottom: 0;
-    }
 
     .advantages_funds_list {
         justify-content: space-between;
@@ -999,6 +1049,14 @@ footer .wrapper_logo {
 
     .membership_steps_list_item p {
         margin-bottom: 111px;
+    }
+
+    .wrapper_tier_cards {
+        flex-direction: unset;
+    }
+
+    .tier_card:first-child {
+        margin-bottom: 0;
     }
 
     .instruments_list_item:nth-child(4), 
@@ -1352,7 +1410,7 @@ footer .wrapper_logo {
         width: 40% !important;
     }
 
-    section:nth-child(n+3) {
+    section:nth-child(n+4) {
         padding-top: 70px;
         padding-bottom: 100px;
     }
@@ -1451,7 +1509,7 @@ footer .wrapper_logo {
     footer {
         padding-top: 40px;
     }
-    
+
     footer .wrapper_logo {
         width: 127px;
         height: 127px;

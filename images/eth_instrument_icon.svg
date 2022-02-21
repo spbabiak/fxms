@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 54">
-  <path fill="#428BC1" fill-rule="evenodd" d="M27 54a27 27 0 1 1 0-54 27 27 0 0 1 0 54Zm13.49-26.63L27.84 6.75 15.19 27.37l12.65 7.35 12.65-7.35Zm.01 2.36-12.66 7.34-12.65-7.34 12.65 17.51L40.5 29.73Z" clip-rule="evenodd"/>
-  <path fill="#000" fill-opacity=".3" d="M27.84 6.75v14.97l12.65 5.65L27.84 6.75Zm0 30.32v10.17L40.5 29.73l-12.66 7.34Z"/>
-  <path fill="#000" fill-opacity=".8" d="m27.84 34.72 12.65-7.35-12.65-5.65v13Z"/>
-  <path fill="#000" fill-opacity=".3" d="m15.19 27.37 12.65 7.35v-13l-12.65 5.65Z"/>
-</svg>

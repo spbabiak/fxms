@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <?php wp_title(); ?>
 
     <?php wp_head(); ?>
 
 </head>
 <body>
+<?php the_content(); ?>
     <header id="home" class="main_header">
         <div class="wrapper">
+            
             <?php 
                 $headerLogo = get_field('header_logo'); 
                 $headerButtonLink = get_field('header_button_link');
@@ -45,7 +48,7 @@
                         );
                     ?>
                 </nav>
-                <a href="<?php if($headerButtonLink): echo $headerButtonLink; endif; ?>" target="_blank" class="btn ghost_btn_1"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
+                <a href="<?php if($headerButtonLink): echo $headerButtonLink; else: echo '#'; endif; ?>" class="btn ghost_btn_1 cta"><?php if($headerButtonText): echo $headerButtonText; endif; ?></a>
             </div>
         </div>
     </header>
